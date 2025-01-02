@@ -1,0 +1,27 @@
+[
+    {
+      "description": "Valid Admin Login",
+      "username": "admin_username",
+      "password": "admin_password",
+      "isValid": true
+    },
+    {
+      "description": "Invalid Login - Wrong Username & Password",
+      "username": "invalid",
+      "password": "invalid",
+      "isValid": false
+    },
+    {
+      "description": "Invalid Login - Correct Username, Wrong Password",
+      "username": "admin_username",
+      "password": "wrongpassword",
+      "isValid": false
+    },
+    {
+      "description": "Invalid Login - Empty Username & Password",
+      "username": "*#&#&&#",
+      "password": "*^^&$*#*",
+      "isValid": false
+    }
+  ]
+  

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "lib": ["dom", "esnext"]
+  },
+  "include": [
+    "src/**/*.ts",          // Includes all TypeScript files under the src directory
+    "tests/**/*.ts",        // Includes all TypeScript files under the tests directory
+    "playwright.config.ts"  // Includes the Playwright configuration file
+  ],
+  "exclude": [
+    "node_modules",         // Excludes node_modules directory
+    "dist"                  // Excludes the dist directory to prevent TypeScript from compiling the output
+  ]
+}

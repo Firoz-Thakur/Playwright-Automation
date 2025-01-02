@@ -1,0 +1,104 @@
+[
+  {
+    "action": "add",
+    "description": "Add a new admin user - john.admin",
+    "userRole": "Admin",
+    "employeeName": "Rahul Das",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "add",
+    "description": "Add a new admin user with user role ESS - john.admin",
+    "userRole": "ESS",
+    "employeeName": "Rahul Das",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "add",
+    "description": "Add a new admin user with different employee name - Ravi M B",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "add",
+    "description": "Add a new admin user with disabled state - Ravi M B",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Disabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "add",
+    "description": "Add a new admin user with different Password - CheckPassword123!",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Disabled",
+    "password": "CheckPassword123!",
+    "newUsername": ""
+  },
+  {
+    "action": "Search and Delete",
+    "description": "Search and Delete: Add a new admin user - john.admin",
+    "userRole": "Admin",
+    "employeeName": "Rahul Das",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "Search and Delete",
+    "description": "Search and Delete: Add a new admin user with user role ESS - john.admin",
+    "userRole": "ESS",
+    "employeeName": "Rahul Das",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "Search and Delete",
+    "description": "Search and Delete : Add a new admin user with different employee name - Ravi M B",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Enabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "Search and Delete",
+    "description": "Search and Delete: Add a new admin user with disabled state - Ravi M B",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Disabled",
+    "password": "SecurePass123!",
+    "newUsername": ""
+  },
+  {
+    "action": "Search and Delete",
+    "description": "Search and Delete: Add a new admin user with different Password - CheckPassword123!",
+    "userRole": "ESS",
+    "employeeName": "Ravi M B",
+    "username": "john.admin",
+    "status": "Disabled",
+    "password": "CheckPassword123!",
+    "newUsername": ""
+  }
+]
+
+

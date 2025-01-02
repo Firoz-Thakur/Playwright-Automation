@@ -1,0 +1,545 @@
+{
+  "config": {
+    "configFile": "/home/i2574/Development/playwright-test-framework/playwright.config.ts",
+    "rootDir": "/home/i2574/Development/playwright-test-framework/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "/home/i2574/Development/playwright-test-framework/node_modules/allure-playwright/dist/cjs/index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/i2574/Development/playwright-test-framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/home/i2574/Development/playwright-test-framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "userManagement.test.ts",
+      "file": "userManagement.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User Management Tests",
+          "file": "userManagement.test.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add a new admin user - john.admin - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8682,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1992
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:33:51.724Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-45728b285d50501286b7",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Add a new admin user with user role ESS - john.admin - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8142,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1947
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:00.504Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-fd1ec933c333d8f080de",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Add a new admin user with different employee name - Ravi M B - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8459,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1828
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:08.655Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-6cb9740f7f93a3a47b24",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Add a new admin user with disabled state - Ravi M B - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8138,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 2116
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:17.124Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-55e0e95e20a2c3506855",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Add a new admin user with different Password - CheckPassword123! - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 10186,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1749
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:25.271Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-1f4f3a898734450611a3",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Search and Delete: Add a new admin user - john.admin - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 20605,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        },
+                        {
+                          "text": "full user name is :john.adminuser_rdtirfxp\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1921
+                        },
+                        {
+                          "title": "Search and Delete Already Created User",
+                          "duration": 12348
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:35.464Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-97251479c0a43430d5cc",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Search and Delete: Add a new admin user with user role ESS - john.admin - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 22601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        },
+                        {
+                          "text": "full user name is :john.adminuser_36pis6ju\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1897
+                        },
+                        {
+                          "title": "Search and Delete Already Created User",
+                          "duration": 11772
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:34:56.075Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-6b8d8a3ffcf2f664d345",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Search and Delete : Add a new admin user with different employee name - Ravi M B - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 20915,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        },
+                        {
+                          "text": "full user name is :john.adminuser_sua6b1kr\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1928
+                        },
+                        {
+                          "title": "Search and Delete Already Created User",
+                          "duration": 12701
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:35:18.687Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-1e9a7fb97ba8b17560ea",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Search and Delete: Add a new admin user with disabled state - Ravi M B - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 20873,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        },
+                        {
+                          "text": "full user name is :john.adminuser_i6ow92xv\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 1944
+                        },
+                        {
+                          "title": "Search and Delete Already Created User",
+                          "duration": 11901
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:35:39.609Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-1ccfdb77e42d795570ab",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "Search and Delete: Add a new admin user with different Password - CheckPassword123! - john.admin (Delete)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 25483,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                        },
+                        {
+                          "text": "full user name is :john.adminuser_scmndxtf\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to User Management Page",
+                          "duration": 3138
+                        },
+                        {
+                          "title": "Search and Delete Already Created User",
+                          "duration": 12696
+                        }
+                      ],
+                      "startTime": "2025-01-02T18:36:00.488Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82479e2feadf3dbd93b9-e21232a21f8769694794",
+              "file": "userManagement.test.ts",
+              "line": 46,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-02T18:33:51.235Z",
+    "duration": 154780.177,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "action": "Search and Delete",
+        "description": "Search and Delete a already created user",
+        "userRole": "Admin",
+        "employeeName": "Rahul  Das",
+        "username": "john.admin",
+        "status": "Enabled",
+        "password": "SecurePass123!",
+        "newUsername": ""
+      }
+  ]
+
+  
+  
