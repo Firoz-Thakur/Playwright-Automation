@@ -83,19 +83,6 @@ To generate an Allure report for your test results, follow these steps:
 
 This will launch a browser displaying the Allure report for your test execution.
 
-## Sample Test
-
-Example test in `tests/example.spec.js`:
-
-```javascript
-const { test, expect } = require('@playwright/test');
-
-test('should load the homepage', async ({ page }) => {
-  await page.goto('https://example.com');
-  await expect(page).toHaveTitle(/Example Domain/);
-});
-```
-
 ## Project Structure
 
 Here’s an overview of the project structure:
@@ -123,26 +110,42 @@ You can modify Playwright configuration for test execution in `playwright.config
 ### Example Playwright Configuration (`playwright.config.js`):
 
 ```javascript
-const { defineConfig, devices } = require('@playwright/test');
+import { defineConfig, devices } from '@playwright/test';
+import * as dotenv from 'dotenv';
 
-module.exports = defineConfig({
-  timeout: 30000,
-  reporter: [
-    ['list'],
-    ['allure-playwright'],
-  ],
-  use: {
-    headless: true,
-    viewport: { width: 1280, height: 720 },
-    actionTimeout: 0,
+dotenv.config({ path: '.env.prod' });
+
+console.log('BASE_URL on config:', process.env.BASE_URL);
+
+export default defineConfig({
+  testDir: 'tests',
+  timeout: 30000, 
+  expect: {
+    timeout: 5000, 
   },
+  use: {
+    headless: false, 
+    viewport: { width: 1280, height: 720 }, 
+    actionTimeout: 0, 
+    baseURL: process.env.BASE_URL, 
+  },
+  reporter: [
+    ['allure-playwright', {
+      outputFolder: 'allure-reports', 
+      suiteTitle: false, 
+    }],
+  ],
+  workers: '100%', 
   projects: [
     {
-      name: 'Desktop Chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'Google Chrome', 
+      use: { ...devices['Desktop Chrome'] }, 
     },
   ],
 });
+
+
+// All of the test were running in concurrently
 ```
 
 ## Running Tests in Different Browsers
