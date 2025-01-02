@@ -152,8 +152,3 @@ You can run tests in different browsers (Chromium, Firefox, Webkit) by configuri
 ```bash
 npx playwright test --project=Desktop Firefox
 ```
-
-## License
-
-This project is licensed under the MIT License.
-```
